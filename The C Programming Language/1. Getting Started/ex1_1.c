@@ -2,10 +2,11 @@
 // leaving out parts of the program, to see what error messages you get.
 
 #include <stdio.h>
-int man()
+int main()
 {
     printf("Hello, Worlds\n");
 }
+
 // int main()
 // {
 //     printf("Govinda");
@@ -34,5 +35,15 @@ int man()
 6. Removing the hash symbol and angle brackets
     -> Unknown type name include
 
-7. 
+7. Misspelling the main()
+    -> Considers it as a different function and quits the program due to the unavailability of main() function.
+
+8. Leaving the semicolon at the end of the statement
+    -> expected ';' before '}' token
+
+9. Leaving the opening curly brackets '{' for the main() function
+    -> expected declaration specifiers for printf()
+
+10. Misspelling printf() as print()
+    -> undefined reference to print, the program exits
 */
