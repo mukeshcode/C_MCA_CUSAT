@@ -21,7 +21,7 @@ int main() // the program execution starts from here
     */
 
     c = getchar();
-    putchar(c);
+    // putchar(c);
     while(c != EOF)  //EOF is an integer defined in <stdio.h>
     {
         putchar(c);

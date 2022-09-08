@@ -1,0 +1,169 @@
+1. What are C tokens?
+2. What are variables?
+3. What are data types?
+4. What are format specifiers?
+5. Range of data types in 32 bit?
+6. Valid and Invalid variables?
+7. What are functions?
+8. What are the types of functions?
+9. Features and history of C language?
+10. Keywords, Identifiers, Special characters and constants?
+______________________________________________________________________________________________________________
+
+1->. A token is the smallest element of a program that is meaningful to the compiler. Tokens can be classified as follows :
+	1. Identifiers
+	2. Keywords
+	3. Constants
+	4. String Literals
+	5. Operators
+	6. Special symbols
+
+	1. Identifiers - An identifier is a sequence of letters and digits used for naming variables, functions, arrays, structure, etc.
+	    Rules for naming identifiers : 
+		1. They must begin with a letter or underscore(_).
+		2. They must consist of only letters, digits, or underscore. No other special character.
+		3. It should not be a keyword.
+		4. It must not contain white space.
+		5. It should be up to 31 characters long as only the first 31 characters are significant.
+
+	2. Keywords - Keywords are pre-defined or reserved words which conveys a specific meaning to the compiler. There are 32 keywords in C :
+	
+	auto 	break 	case 	char 	const 	continue 	default 	do
+	double 	else 		enum	extern 	float 	for 		goto 	if
+	int 		long 	register 	return 	short 	signed 	sizeof 	static
+	struct 	switch 	typedef 	union 	unsigned 	void 	volatile	while
+
+	3. Constants - Constants in C are the fixed values used in the program and its value remains the same during the entire execution of the program. They are also called as literals.
+		There are two ways of declaring a constant:
+			1. Using 'const' keyword : 
+				const int a = 32;
+			2. Using #define preprocessor
+				#define UPPER 32
+	Constants can be divided into : 
+			i. Integer constant
+			ii. Character constant
+			iii. Floating point constant
+			iv. Double constant
+			v. Enumeration constant
+			vi. Octal constant - By adding '0' in the beginning
+			vii. Hexadecimal constant - By adding '0x' in the beginning
+			 
+
+	4. String Literals - A string literal also called a string constant, is a sequence of characters ending with a null character surrounded by double quotes.
+
+	5. Operators - Operators are symbols which are used to perform certain operations on the operands.
+		Types of operators on the basis of number of operands involved : 
+			1. Unary operator - Operators which require only a single operand to act upon. These are increment,decrement, positive and negative signs like a++, a--, +a, -a.
+			2. Binary operator - Operators which require two operand to act upon. Types of binary operators : 
+					1. Arithmetic operators (+, -, *, /, %)
+					2. Logical Operators (&&, ||, !)
+					3. Relational Operators (<, <=, >, >=, ==, !=)
+					4. Bitwise Operators (&, |, <<, >>)
+					5. Assignment Operators (=)
+			3. Ternary operator(Conditional operator)(?, :) - Operators which require three operands to act upon are called ternary operators. 
+
+		Types of operators on the basis of tasks performed by the operator : 
+					1. Arithmetic operators (+, -, *, /, %)
+					2. Logical Operators (&&, ||, !)
+					3. Relational Operators (<, <=, >, >=, ==, !=)
+					4. Bitwise Operators (&, |, ~, <<, >>)
+					5. Assignment Operators (=)
+					6. Conditional Operators (?, :)
+					7. Special Operators (sizeof())
+
+
+	6. Special Symbols - The following special symbols convey a special meaning to the compiler and thus cannot be used for some other purpose: brackets[], parantheses(), braces{}, comma, , colon:, semicolon;, asterisk*, preprocessor#.
+
+_______________________________________________________________________________________________________________
+
+2->. A variable is a name of a memory location. It is used to store data. Its value can be changed, and it can be reused many times.
+It is a way to represent memory location through symbol so it can be easily identified. Types of  variables in C :
+ 	1. Character variable
+	2. Integer variable
+	3. Floating point variable
+	4. Double variable
+
+_______________________________________________________________________________________________________________
+
+3->. Data type of variables decide the type and size of data associated with the variables.
+
+	Basic/Primitive/Fundamental				Derived				User Defined
+	|-> char								|-> pointer			|-> structure	
+	|-> int								|-> array				|-> union
+	|-> float								|-> structure			|
+	|-> double							|-> union				|
+	|									|-> enum				|
+	*									*					*
+
+_______________________________________________________________________________________________________________
+
+4->. Format specifier is used during input and output. It is a way to tell the compiler what type of data is in a variable during taking input
+using scanf() or while printing output using printf(). Here is a list of format specifiers : 
+	1. %c - character
+	2. %d or %i- signed integer
+	3. %e or %E - Scientific notation of floats
+	4. %f - float values
+	5. %g or %G - Similar as %e or %E
+	6. %hi - signed integer (short)
+	7. %hu - unsigned unteger (short)
+	8. %u - unsigned integer
+	9. %ld - long signed int
+	10. %lu - long unsigned int
+	11. %f - float
+	12. %lf - double
+	13. %Lf - long double
+
+_______________________________________________________________________________________________________________
+
+5->. Range of data types in 32 bit -
+
+	1. char - 1 byte
+	2. int - 4 byte
+	3. long long int - 8 byte
+	4. float - 4 byte
+	5. double - 8 byte
+	6. long double - 16 byte
+
+______________________________________________________________________________________________________________
+
+6->. Rules for writing valid variables :
+	1. The identifier name will only contain letters, digits and _.
+	2. It must not be a keyword.
+	3. The variable name cannot start with digits.
+	4. The variable name cannot have blank spaces.
+	5. The variable name has to be atmost 31 characters long as only the first 31 characters are significant.
+
+______________________________________________________________________________________________________________
+
+7->8->. A function is a block of code that performs a specific task, when called.
+	Types of function :
+ 		1. Standard Library function - Built in functions in C programming.
+		2. User defined function - Functions created manually by the user.
+	Now, we have four types of user defined function - 
+	1. No argument passed and no return value.
+	2. No argument passed and return value.
+	3. Argument passed and no return value.
+	4. Argument passed and return value.
+
+_______________________________________________________________________________________________________________
+
+
+9->. Features of C programming language : 
+	1. Procedural Language - 
+	2. Fast and efficient
+	3. Modularity - The concept of storing C programming language code in the form of libraries for further usage is called modularity.
+	4. Statically typed language - The data type is checked at the compilation time and not at the run time.
+	5. Rich set of built-in operators.
+	6. General Purpose Language.
+	7. Middle level language.
+	8. Portability.
+	9. Easy to extend.
+	10. Libraries with rich functions.
+	
+	History of C programming language - C is a procedural programming language initially developed by "Dennis Ritchie" in 1972. Although it was mainly developed as a system programming language used to write operating system, it has evolved as a suitable general purpose programming language which can serve in any domain. Many features of C stem from BCPL(Basic Combined Programming Language) developed by "Martin Richards" and Language "B" developed by "Ken Thompson". It has been closely associated with the UNIX system where it was developed, since both the system and most of the programs that run on it are written in C. C was developed for the UNIX operating system to beat the issues of previous languages such as B, BCPL, etc.
+
+
+
+
+
+
